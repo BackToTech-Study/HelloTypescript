@@ -3,27 +3,30 @@ import { Some } from "./models/some"
 
 let d: Some = new Some()
 d.name = 'd';
-showObjectInfo(d)
+showInfoSection("let d: Some = new Some()", d)
 
 let e = new Some()
 e.name = 'e';
-showObjectInfo(e)
+showInfoSection("let e = new Some()", e)
 
 let f: ISome = new Some() as ISome
 f.name = 'f';
-showObjectInfo(f)
+showInfoSection("let f: ISome = new Some() as ISome", f)
 
 let a: ISome = {id: 0, name: "a"} as ISome
-showObjectInfo(a)
+showInfoSection("let a: ISome = {id: 0, name: \"a\"} as ISome", a)
 
 let b: Some = { ...a, name: "b" } as Some
-showObjectInfo(b)
+showInfoSection("let b: Some = { ...a, name: \"b\" } as Some", b)
 
 let c = { ...a, name: "c" } as Some
-showObjectInfo(c)
+showInfoSection("let c = { ...a, name: \"c\" } as Some", c)
 
-function showObjectInfo(source: any) {
-  console.log(source)
-  console.log(`${source.name} instanceof Some = ${source instanceof Some}`)
+
+function showInfoSection(tytle: string, object: any) {
   console.log(`_________________________________________`)
+  console.log(tytle)
+  console.log(object)
+  console.log(`${object.name} instanceof Some = ${object instanceof Some}`)
 }
+
