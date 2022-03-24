@@ -35,6 +35,7 @@ Basic programming concepts in Typescript
     * You should prefer interface. Use type when you need specific features.
 - [x] “duck typing” or “structural typing” - two objects have the same shape, they are considered to be of the same type
     * TypeScript’s type system is fully erased at runtime => typeof(new Another()) === 'object'
+- [x] Implement Dictionaries with [Record](https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type)
 
 ### Classes
 - [x] Declare a [class](https://www.typescriptlang.org/docs/handbook/2/classes.html)
