@@ -23,14 +23,15 @@ let c = { ...a, name: "Ms. C" } as Some
 showInfoSection("let c = { ...a, name: \"Ms. C\" } as Some", c)
 
 
-function showInfoSection(tytle: string, object: any) {
+function showInfoSection(title: string, object: ISome) {
   console.log(`_________________________________________`)
+  console.log(title)
   if (object instanceof Some)
     console.log(object.sayHello())
   else
-    console.log(`object '${object.name}' doesn't contain the method 'sayHello'`)
-  console.log(tytle)
+    console.log(`Object with name ${object.name} doesn't implement the method sayHello`)
   console.log(object)
   console.log(`${object.name} is instanceof Some = ${object instanceof Some}`)
+  console.log(`Object as json = ${JSON.stringify(object)}`)
 }
 
