@@ -22,6 +22,8 @@ showInfoSection("let b: Some = { ...a, name: \"Mr. B\" } as Some", b)
 let c = { ...a, name: "Ms. C" } as Some
 showInfoSection("let c = { ...a, name: \"Ms. C\" } as Some", c)
 
+let g = { ...a, name: "Mr. G", weight: 5 } as ISome
+showInfoSection("let g = { ...a, name: \"Ms. G\", weight: 5 } as ISome", g)
 
 function showInfoSection(title: string, object: ISome) {
   console.log(`_________________________________________`)
