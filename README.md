@@ -37,6 +37,9 @@ Basic programming concepts in Typescript
     * TypeScript’s type system is fully erased at runtime => typeof(new Another()) === 'object'
 - [x] [Enums](https://www.typescriptlang.org/docs/handbook/enums.html)
 - [x] Implement Dictionaries with [Record](https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type)
+- [x] associative arrays
+- [x] for in
+- [x] for of
 
 ### Classes
 - [x] Declare a [class](https://www.typescriptlang.org/docs/handbook/2/classes.html)
