@@ -107,3 +107,15 @@ let typeValue: string = typeof(new Another())
 separate<InfoMessage>(showObjectInfo, {title: 'let typeValue: any = typeof(someDude)', variable: typeValue})
 
 
+var simple = ['Skoda', 'BMW', 'Dacia', 'Volvo']
+
+console.log('checking for of')
+for (const item of simple) {
+    console.log(item)
+}
+
+console.log('checking for in')
+for (const key in simple) {
+    console.log(key)
+}
+
