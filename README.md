@@ -7,6 +7,9 @@ Basic programming concepts in Typescript
 ## Setup
 - [x] [install](https://www.typescriptlang.org/docs/handbook/typescript-tooling-in-5-minutes.html) with `npm install typescript`
 - [x] compile your typescript code with `npx tsc fileName.ts`. To activate compilation at every code change you can activate the watch mode by using the `-w` flag: `npx tsc -w fileName.ts`
+- [x] the compilation process will generate a `fileName.js` file wich can be
+   * executed with node: `node fileName.js` 
+   * or it can be included in an HTML file to be rendered by the browser.
 
 ## Syntax
 ### Data types
