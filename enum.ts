@@ -26,7 +26,22 @@ arr['Volvo'] = 3
 console.log(`arr['Dacia'] = ${arr['Dacia']}`)
 console.log(`arr[2] = ${arr[2]}`)
 
-tmp = arr['Dacia']
+var tmp = arr['Dacia']
 console.log(`tmp = ${tmp}`)
 
-console.log(`Masini['Dacia'] == arr['Dacia'] <=> ${Masini['Dacia'] == arr['Dacia']}`)
+// console.log(`Masini['Dacia'] == arr['Dacia'] <=> ${Masini['Dacia'] == arr['Dacia']}`)
+
+
+enum Numbers {
+    ONE = "One",
+    TWO = "Two",
+    THREE = "Three",
+}
+
+function showNumber(number: Numbers) {
+    console.log(`showNumber(${number}) => ${number}`)
+}
+
+showNumber(Numbers.ONE);
+// showNumber("One");
+
